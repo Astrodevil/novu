@@ -35,7 +35,7 @@ export function ActivityList({ data: userData, pagination = false, loading = fal
               width: '100%',
             }}
           >
-            <ActivityItem key={index} item={item} />
+            <ActivityItem key={`activity-item-${item.id}`} item={item} />
           </UnstyledButton>
         );
       })}

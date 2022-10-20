@@ -126,7 +126,7 @@ export function ActivitiesPage() {
           onPageChange: handleTableChange,
         }}
       />
-      <ExecutionDetailsModal modalVisibility={isModalOpen} onClose={onModalClose} />
+      <ExecutionDetailsModal modalVisibility={isModalOpen} onClose={onModalClose} origin={location.pathname} />
     </PageContainer>
   );
 }
